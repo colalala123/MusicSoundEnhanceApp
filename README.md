@@ -1,1 +1,2 @@
 安卓编写的音乐声音增强App，使得手机播放的声音超过其自身的最大声音，在紧急情况下小型蓝牙音响使用
+apk安装包的路径为app/release/release/app-release.apk
