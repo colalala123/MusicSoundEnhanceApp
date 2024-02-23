@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/collect_text"
+        android:textColor="@color/black"
+        android:text="收藏歌曲"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/playnum_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="同播数"
+        android:layout_below="@+id/collect_text"
+        android:background="@null"
+        android:maxLength="2"
+        android:inputType="number"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/song_gap_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collect_text"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:hint="间隔时间（毫秒,>100）"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view_collect"
+        android:layout_below="@id/playnum_collect"/>
+</RelativeLayout>
